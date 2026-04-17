@@ -130,3 +130,110 @@ item is found in the list or not.
 Note: Perform case insensitive search. Whether the user 
 enters cookie, Cookie, COOKIE or coOkIE, program 
 should inform about its availability. Example: */
+
+// var item = ["cookie", "cake", "apple pie", "chips", "pastries", "bread",]
+// var userInput = prompt("Enter item name you want to eat");
+// var searchItem = userInput.toLowerCase();
+// var found = false;
+
+// for(var i=0; i<item.length; i++){
+//     if(item[i].toLowerCase() === searchItem){
+//        found = true; 
+
+//        alert(searchItem + " is available at index " + i + " in our bakery");
+//        break;
+//     }
+// }
+// if(found === false){
+//    alert("We are sorry " + searchItem + " is not available in our bakery");
+// }
+
+/* 15. Write a program to take password as an input from 
+user. The password must qualify these requirements: 
+a. It should contain alphabets and numbers 
+b. It should not start with a number 
+c. It must at least 6 characters long 
+If the password does not meet above requirements, 
+prompt the user to enter a valid password. 
+For character codes of a-z, A-Z & 0-9, refer to ASCII 
+table at the end of this document. */
+
+// let valid = false;
+// let pass;
+
+// while (!valid) {
+
+//     pass = prompt("Enter your password");
+
+//     if (pass.length < 6) {
+//         alert("Password must be at least 6 characters long");
+//         continue;
+//     }
+
+//     let firstChar = pass.charAt(0);
+//     if (firstChar >= "0" && firstChar <= "9") {
+//         alert("Password should not start with a number");
+//         continue;
+//     }
+
+//     let hasLetter = false;
+//     let hasNumber = false;
+
+//     for (let i = 0; i < pass.length; i++) {
+//         let ch = pass.charAt(i);
+
+//         if ((ch >= "a" && ch <= "z") || (ch >= "A" && ch <= "Z")) {
+//             hasLetter = true;
+//         } 
+//         else if (ch >= "0" && ch <= "9") {
+//             hasNumber = true;
+//         }
+//     }
+
+//     if (!hasLetter || !hasNumber) {
+//         alert("Password must contain both letters and numbers");
+//         continue;
+//     }
+
+//     valid = true;
+// }
+
+// alert("Password accepted: " + pass);
+
+
+/* 16. Write a program to convert the following string to an 
+array using string split method. 
+var university = “University of Karachi”; 
+Display the elements of array in your browser. */
+
+// let university = "University of karachi";
+// let uniArr = university.split(" ");
+
+// for(i = 0; i < uniArr.length ; i++){
+//     document.writeln(uniArr[i] + "</br>");
+// }
+
+/* 17. Write a program to display the last character of a user 
+input. */
+
+// var userInput = prompt("Enter anything");
+// var lastChar = userInput.charAt(userInput.length -1);
+
+// alert("Last Character of user input is ; " + lastChar);
+
+
+/* 18. You have a string “The quick brown fox jumps over the 
+lazy dog”. Write a program to count number of 
+occurrences of word “the” in given string. */
+
+// var line = "The quick brown fox jumps over the lazy dog";
+// var lowerLine = line.toLowerCase();
+// var lineArr = lowerLine.split(" ");
+// let count = 0;
+
+// for(let i = 0; i < lineArr.length; i++){
+//     if (lineArr[i] === "the"){
+//         count++;
+//     }
+// }
+// alert("The word 'the' occurs " + count + " times.");
