@@ -170,20 +170,20 @@ keyboard in hundreds, find the total number of currency notes
 of each denomination the cashier will have to give to the 
 withdrawer. */
 
-function notes(amount) {
+// function notes(amount) {
 
-    var hundred = Math.floor(amount / 100);
-    amount = amount % 100;
+//     var hundred = Math.floor(amount / 100);
+//     amount = amount % 100;
 
-    var fifty = Math.floor(amount / 50);
-    amount = amount % 50;
+//     var fifty = Math.floor(amount / 50);
+//     amount = amount % 50;
 
-    var ten = Math.floor(amount / 10);
+//     var ten = Math.floor(amount / 10);
 
-    document.write("100 notes: " + hundred + "<br>");
-    document.write("50 notes: " + fifty + "<br>");
-    document.write("10 notes: " + ten);
-}
+//     document.write("100 notes: " + hundred + "<br>");
+//     document.write("50 notes: " + fifty + "<br>");
+//     document.write("10 notes: " + ten);
+// }
 
-var amt = +prompt("Enter amount");
-notes(amt);
+// var amt = +prompt("Enter amount");
+// notes(amt);
