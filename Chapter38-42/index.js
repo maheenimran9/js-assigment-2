@@ -152,8 +152,38 @@ Overtime is paid at the rate of Rs. 12.00 per hour for every hour
 worked above 40 hours. Assume that employees do not work 
 for fractional part of an hour. */
 
+// function overtimePay(hours){
+//     if(hours > 40){
+//       var overtime = hours - 40;
+//       return overtime * 12;
+//     } else {
+//         return 0;
+//     }
+// }
+
+// var hrs = +prompt("Enter working hours");
+// alert("Overtime Pay: Rs. " + overtimePay(hrs));
+
 /* 10. A cashier has currency notes of denominations 10, 50 and 
 100. If the amount to be withdrawn is input through the 
 keyboard in hundreds, find the total number of currency notes 
 of each denomination the cashier will have to give to the 
 withdrawer. */
+
+function notes(amount) {
+
+    var hundred = Math.floor(amount / 100);
+    amount = amount % 100;
+
+    var fifty = Math.floor(amount / 50);
+    amount = amount % 50;
+
+    var ten = Math.floor(amount / 10);
+
+    document.write("100 notes: " + hundred + "<br>");
+    document.write("50 notes: " + fifty + "<br>");
+    document.write("10 notes: " + ten);
+}
+
+var amt = +prompt("Enter amount");
+notes(amt);
