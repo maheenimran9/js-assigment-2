@@ -69,10 +69,27 @@ from mainFunction and display result in mainFunction. */
 /* 5. You have learned the function indexOf. Code your own custom 
 function that will perform the same functionality. You can code 
 for single character as of now. */
+
+// function myIndexof(str, char){
+//     for( var i = 0; i < str.length; i++ ){
+//         if(str[i] === char){
+//             return i;
+//         }
+//     }
+//     return -1;
+// }
  
+// alert(myIndexof("hello", "e"));
+
 /* 6. Write a function to delete all vowels from a sentence. Assume 
 that the sentence is not more than 25 characters long. */
- 
+
+// function removeVowels(str){
+//     return str.replace(/[aeiou]/gi, "");
+// }
+
+// alert(removeVowels("Hello World")); 
+
 /* 7. Write a function with switch statement to count the number of 
 occurrences of any two vowels in succession in a line of text. 
 For example, in the sentence 
@@ -80,9 +97,55 @@ FUNCTIONS, switch statements, while… do-while loops | JAVASCRIPT
 “Pleases read this application and give me gratuity” 
 Such occurrences are ea, ea, ui. */
 
+// function countVowelPairs(str){
+
+//     var count = 0;
+
+//     for(var i = 0; i < str.length - 1 ; i++){
+       
+//         var pair = str[i] + str[i + 1];
+
+//         switch (pair) {
+//             case "ea":
+//             case "ui":
+//             case "ee":
+//             case "oo":
+//                 count++;
+//                 break;
+//         }
+    
+//     }
+
+//     return count;
+// }
+
+// alert(countVowelPairs("Pleases read this application and give me gratuity"));
 /* 8. The distance between two cities (in km.) is input through the 
 keyboard. Write four functions to convert and print this 
 distance in meters, feet, inches and centimeters. */
+
+// function toMeter(km){
+//     return km * 1000;
+// }
+
+// function toFeet(km){
+//     return km * 3280.4;
+// }
+
+// function toInches(km){
+//     return km * 39370.1;
+// }
+
+// function toCm(km){
+//     return km * 100000;
+// }
+
+// var km = +prompt("Enter distance in KM");
+
+// document.write("Meters : " + toMeter(km) + "</br>");
+// document.write("Feets : " + toFeet(km) + "</br>");
+// document.write("Inches : " + toInches(km) + "</br>");
+// document.write("CentiMeters : " + toCm(km) + "</br>");
 
 /* 9. Write a program to calculate overtime pay of employees. 
 Overtime is paid at the rate of Rs. 12.00 per hour for every hour 
